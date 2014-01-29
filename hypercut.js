@@ -50,7 +50,7 @@ loadModule = function loadModule( location, eventHandlers ){
 			HTTPRequest.addEventListener( handlerName, eventHandlers[ handlerName ] );
 			boundHandlers.push( handlerName );
 		}
-		arrayIntersection( eventList, boundHandlers );
+		collectionDifference( eventList, boundHandlers );
 	}
 
 };
